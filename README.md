@@ -10,7 +10,7 @@ Todas as propostas foram feitas pela professora Tânia Basso e interpretadas/cod
 os mesmos serão citados no cabeçalho dos códigos. 
 
 ### Requisitos
-Os projetos foram feitos em Java, primordialmente utilizando o NetBeans e o Apache NetBeans, assim você precisará de uma plataforma similiar para roda-los. 
+Os projetos foram feitos em Java, primordialmente utilizando o NetBeans e o Apache NetBeans, assim você precisará de uma plataforma similar para roda-los. 
 Ademais, os arquivos produzidos a partir do segundo semestre de 2022 podem conter ligações com banco de dados, onde foram conectados ao MySQL.
 ________
 
