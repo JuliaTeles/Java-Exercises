@@ -12,6 +12,10 @@ os mesmos serão citados no cabeçalho dos códigos.
 ### Requisitos
 Os projetos foram feitos em Java, primordialmente utilizando o NetBeans e o Apache NetBeans, assim você precisará de uma plataforma similar para roda-los. 
 Ademais, os arquivos produzidos a partir do segundo semestre de 2022 podem conter ligações com banco de dados, onde foram conectados ao MySQL.
+
+### Projetos
+#### Projeto Floricultura
+Projeto base para o Projeto Flores, feito em sala com o intuito de comprovar os conhecimentos de conexão com o banco de dados. 
 ________
 
 ###### English | ENG
