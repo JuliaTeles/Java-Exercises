@@ -1,0 +1,13 @@
+----Programação em camadas----
+Turing - Empresa
+
+Padrão arquitetural: Solução padrão para um programa comum de programação. "Model View Control" (MVC) - planejamento da estrutura. Reduz o acoplamento - a dependência das partes, código mais flexível.
+
+Funcionalidades bem definidas resultam em um baixo acoplamento que facilita o reuso e a manutenção.
+
+- VIEW: telas para o usuário; 
+- CONTROLLER: lógica de negócio (validação, cálculo, if & else); intermedia a comunicação entre view e model;
+- MODEL: os modelos - as nossas classes; se subdivide na Model-DAO(classes de acesso ao banco de dados);
+
+Pegar os dados e passar para o controller = chamar o método que recebe os dados da view, instanciando o controller na view. 
+

@@ -1,0 +1,49 @@
+----ArrayList----
+- Não podemos redimensionar um array em Java;
+- É impossível buscar diretamente por um determinado elemento cujo índice não se sabe. 
+- Não conseguimos saber quantas posições do array já foram completas. 
+
+É responsável por inserir e remover elementos de forma dinâmica. Ele não é um array - é uma lista de objetos.
+
+--> Para criar um arrayList
+	import java.util.ArrayList;
+	ArrayList lista = new ArrayList();
+
+--> Método add
+Recebe o objeto a ser inserido e o coloca no final da lista.
+Ex.:
+	lista.add("Pastel");
+Permite adicionar o elemento em qualquer posição da lista.
+Ex.:
+	lista.add(2,"Pastel");
+
+--> Para saber o tamanho do array
+	System.out.println(contas.size());
+
+--> Para remover itens da lista
+	contas.remove(3)//começa do zero
+
+--> Para ler dados
+	Conta c1 = contas.get(2)
+
+----Iterator----
+
+import java.util.Iterator;
+Iterator <ContaCorrente> it = lista.iterator();
+while (it.hasNext())
+{
+	ContaCorrente cc = it.next();
+	cc.deposita(500);
+
+}
+
+
+
+
+
+
+/*
+    Nome: Júlia Téles Cruz      06/04/22        3°INFD
+    Aula 11, exemplo 1
+    Polimorfismo
+*/

@@ -1,0 +1,22 @@
+----Polimorfismo----
+Capacidade de um método em agir de diferentes formas, dependendo do objeto sobre o qual está sendo chamado.
+ 
+Sobrescrita: "muda-se o recheio", joga por cima do que vem por herança.
+
+Ex.:
+Animal a = new Cachorro();
+O método invocado é determinado pelo tipo do objeto que está armazenado na memória.
+
+A forma como um objeto é referenciado não influencia na decisão sobre qual método é invocado.
+
+----instanceOf----
+Utilizado para verificar se um objeto pertence à determinada classe.
+Normalmente é usado antes de realizar um cast, para garantir que a operação é válida.
+
+Cast: conversor 
+Ex.: Cachorro a = (Cachorro) c
+
+----Operador Final----
+O modificador final quando utilizado em classes ou métodos bloqueia, respectivamente, a extensão e a sobreescrita, isto é, utilizamos este modificador quando não desejamos que nossa classe tenha subclasses ou o método seja sobreescrito.
+
+Deve ser usado com cuidado, pois ele vai contra um dos pilares da orientação a objeto: "Reuso de código através da herança".

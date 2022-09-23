@@ -1,0 +1,6 @@
+---Construtores---
+São metodos especiais, chamadas quando se é utilizado  "new". Não retornam valores nem void. Servem para inicializar objetos. Sempre tem o mesmo nome da classe, assim começando com letra maiuscula. Se nenhum construtor é definido para uma classe, o compilador cria um construtor default que não recebe argumentos.
+
+---Sobrecarga---
+Podemos definir vários construtores, mas com tipos e quantidades de argumentos diferentes.
+

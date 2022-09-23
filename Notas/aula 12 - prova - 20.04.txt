@@ -1,0 +1,8 @@
+criar get and set na mão //
+fazer classe com metodo estatico
+criar instancias //
+fazer heranca e polimorfismo //
+ler diagrama
+sobreescrita //
+array list //
+  

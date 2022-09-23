@@ -1,0 +1,2 @@
+----Table----
+JTable exige um DefaultTableModel, o qual é trabalhado na parte de model.

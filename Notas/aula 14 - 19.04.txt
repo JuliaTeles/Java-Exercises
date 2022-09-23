@@ -1,0 +1,21 @@
+---- Interface ---
+
+Cria métodos mas não implementa. Para implementa-lá: 
+
+eX.: 
+public  interface AreaCalculavel{
+
+	public  double calcularArea();
+
+}
+
+public class quadrado implements AreaCalculavel{
+
+	private double lado
+
+	public double calcularArea(){
+		return lado*lado;
+	}
+}
+
+Interfaces podem estender outras interfaces. 

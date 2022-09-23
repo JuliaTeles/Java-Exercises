@@ -1,0 +1,17 @@
+-----Herança-----
+
+A vantagem da herança é agrupar coisas comuns para poder reaproveitar código.
+
+Superclasse = Classe pai
+
+Subclasse = Classe filha
+
+"extends" -> classifica herança, ou seja, dá os atributos da superclasse para a subclasse.
+
+Por default do java, qualquer classe é extends de Object. Assim herdando diversos métodos.
+
+Construtor: 
+
+public CarroTurbo(String marca){
+	super(marca);
+}

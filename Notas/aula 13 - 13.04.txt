@@ -1,0 +1,24 @@
+---- Classes abstratas ----
+
+Elas não permitem instâncias. Não pode ser instanciada de forma direta - sem "new". 
+
+Ex:
+	public abstract class Animal{  
+	
+	}
+
+Isso garante a consistencia do programa. Não é permitida a existência de objetos da classe. É permitido criar referências a classse.
+
+Ex:
+	Animal a = new Cachorro(); //funciona
+
+Possui dois tipos de métodos, sendo eles
+Concretos - possui recheio
+ou Abstratos - é vazio
+
+Tornar um método abstrato, obriga as classes filhas a sobreescreverem o método. 
+
+Ex: 
+	public abstract void falar();
+
+Método abstrato torna obrigatoriamente a classe abstrata também.

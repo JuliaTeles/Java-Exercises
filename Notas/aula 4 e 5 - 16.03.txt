@@ -1,0 +1,27 @@
+O método é do objeto, pois sua chamada é referente ao objeto. 
+Classes precisam de atributos/métodos a todas instancias.
+
+-----Static-----
+
+Ele compartilha o mesmo valor para todas as instâncias. Ele é comum para todos os objetos criados.
+
+Ex: 
+public class Jogador{
+
+	private int id;
+	private String nome;
+	private static int totalJogadores=0; 
+
+}
+
+Como não pertence a nenhum objeto não refere-se ele com prefixo "this", como:
+
+this.setNome(nome);
+
+São chamados a partir da classe. 
+
+-------------------
+
+para comparar strings: equals
+ex:
+ (aluno.equals(pessoa))

@@ -1,0 +1,4 @@
+----PROTECTED----
+
+É atribuido na superclasse e pode ser acessado pelas subclasses.
+
