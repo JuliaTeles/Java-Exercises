@@ -16,6 +16,9 @@ Ademais, os arquivos produzidos a partir do segundo semestre de 2022 podem conte
 ### Projetos
 #### Projeto Floricultura
 Projeto base para o Projeto Flores, feito em sala com o intuito de comprovar os conhecimentos de conexão com o banco de dados. 
+
+### Notas
+As notas são anotações importantes para as provas relativas a matéria de Linguagem de Programação. 
 ________
 
 ###### English | ENG
