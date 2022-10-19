@@ -1,0 +1,91 @@
+Conexão -----------
+	public class connection{
+		public static connection getConnection(){
+			String url = "númeo da host";
+			String usuario = "cl200558"; 
+			String senha = "cl*30092004";
+			
+			try{
+				return DriverManager.getConnection(url, usuario, senha);
+			}
+			catch(SQLException ex){
+				System.ou.println("Deu ruim viu");
+			}
+		}
+	}
+
+DAO -----------
+
+public class AlunoDAO{
+	Connection con;
+	public void inserir(Aluno e) throws SQLException{
+		con = new Conexao().getConnection();
+		String sql = "INSERT INTO Alunos (RA, NOME) value (?,?)";
+		PrepareStatement stmt = con.PrepareStatement(sql);
+		stmt.setInt(1, a.getRa());
+		stmt.setString(2, a.getNome());
+	
+		stmt.execute();
+		stmt.close();
+		con.close();
+	}
+
+}
+Hibernate -----------
+
+-> Class
+	@Entity
+	@Table (name ="AlunoHib")
+
+-> Var
+	@Id
+	@Column
+
+ ->MAIN
+
+	Session session = HibernateUtil.getSessionFactory().openSession();
+	session.beginTransaction();
+
+	criar os bixo (Aluno a1 = new Aluno(123, José);)
+
+	session.save(a1);
+	session.getTransaction().commit();
+	
+	// Mostra para o usuário os bixo 
+	String hql = "from AlunoHib where nome like 'M%' order by ra";
+	Query query = session.createQuery(hql);
+	ArrayList<Aluno> listaAluno = (ArrayList) query.list();
+	for (Aluno a: listaAluno){ sout ("RA: " + a.getRa())}
+	
+	session.close();
+	HibernateUtil.shutdown();
+
+Spring -----------
+
+ ->Repository
+	public interface AlunoRepository extends JpaRepository<Aluno, Integer>{
+		// MÁGICA: faz métodos em tempo de execução
+	}
+
+ -> Controller
+	@RestController
+	@RequestMapping (value="/apiAluno")
+	public class AlunoController{
+
+		@Autowired
+		AlunoRepository alunoRepository;
+		
+
+		// Busca todos
+		@GetMapping (value="/alunos")
+		public List<Aluno> listarAlunos(){
+			return alunoRepository.findAll(ra);
+		}
+		
+		// Busca especifico
+		@GetMapping (value="/alunos/{ra}")
+		public Optional<Aluno> listarAlunosPorRA(@PathVariable(value="ra") int ra){
+			return alunoRepository.findById(ra);
+		}	
+
+	} 
