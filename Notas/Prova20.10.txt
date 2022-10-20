@@ -1,6 +1,0 @@
-Prova de Java (20/10)
-__________________________________
-- MVC
-- como cria uma tabela no banco
-- como colocar um objeto no banco
-- Session save
