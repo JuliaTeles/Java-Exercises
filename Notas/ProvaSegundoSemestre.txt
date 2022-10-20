@@ -2,8 +2,8 @@ Conexão -----------
 	public class connection{
 		public static connection getConnection(){
 			String url = "númeo da host";
-			String usuario = "cl200558"; 
-			String senha = "cl*30092004";
+			String usuario = "usuario"; 
+			String senha = "senha";
 			
 			try{
 				return DriverManager.getConnection(url, usuario, senha);
@@ -18,7 +18,7 @@ DAO -----------
 
 public class AlunoDAO{
 	Connection con;
-	public void inserir(Aluno e) throws SQLException{
+	public void inserir(Aluno a) throws SQLException{
 		con = new Conexao().getConnection();
 		String sql = "INSERT INTO Alunos (RA, NOME) value (?,?)";
 		PrepareStatement stmt = con.PrepareStatement(sql);
@@ -46,7 +46,7 @@ Hibernate -----------
 	Session session = HibernateUtil.getSessionFactory().openSession();
 	session.beginTransaction();
 
-	criar os bixo (Aluno a1 = new Aluno(123, José);)
+	Aluno a1 = new Aluno(123, José);
 
 	session.save(a1);
 	session.getTransaction().commit();
@@ -55,7 +55,7 @@ Hibernate -----------
 	String hql = "from AlunoHib where nome like 'M%' order by ra";
 	Query query = session.createQuery(hql);
 	ArrayList<Aluno> listaAluno = (ArrayList) query.list();
-	for (Aluno a: listaAluno){ sout ("RA: " + a.getRa())}
+	for (Aluno a: listaAluno){ System.ou.println ("RA: " + a.getRa());}
 	
 	session.close();
 	HibernateUtil.shutdown();
@@ -64,7 +64,7 @@ Spring -----------
 
  ->Repository
 	public interface AlunoRepository extends JpaRepository<Aluno, Integer>{
-		// MÁGICA: faz métodos em tempo de execução
+		// MÁGICA: métodos em tempo de execução
 	}
 
  -> Controller
